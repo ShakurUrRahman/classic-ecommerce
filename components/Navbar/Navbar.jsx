@@ -44,34 +44,50 @@ const Navbar = () => {
           </ul>
         </div>
       </header>
-      <main className="w-full h-[145px] px-[46px] flex justify-between items-center">
-        <div className="flex justify-center items-center gap-16">
+      <main className="w-full h-[125px] px-[50px] flex justify-between items-center">
+        <div className="flex justify-center items-center gap-24">
           <Image src={logo} alt="" className="w-[155px] h-[45px]" />
-          <div className="flex justify-center items-center gap-5">
-            <GiHamburgerMenu />
+          <div className="flex justify-center items-center gap-8">
+            <p className="text-2xl">
+              <GiHamburgerMenu />
+            </p>
             <form>
               <input
                 type="text"
                 placeholder="Search for Products"
-                className="absolute w-[600px] border-2 rounded-3xl border-[#FED700] placeholder-slate-400 focus:outline-none px-[33px] py-[10px]"
+                className="absolute w-[520px] border-2 rounded-3xl border-[#FED700] placeholder-slate-400 focus:outline-none px-[33px] py-[7px]"
               />
-              <button className="relative left-[350px]">
-                <div className="flex justify-center items-center gap-10">
+              <button className="relative left-[315px] bottom-1">
+                <div className="flex justify-center items-center gap-2">
                   <p>All Categories</p>
-                  <HiOutlineChevronUpDown />
+                  <p className="font-bold">
+                    <HiOutlineChevronUpDown />
+                  </p>
                 </div>
               </button>
-              <button className="relative left-[400px] bg-[#FED700] px-[14px] py-[15px] border rounded-r-3xl">
+              <button className="relative text-xl left-[333px] bg-[#FED700] px-[22px] py-[10px] border rounded-r-3xl">
                 <BsSearch />
               </button>
             </form>
           </div>
         </div>
-        <div className="flex gap-14">
-          <MdOutlineFavoriteBorder />
+        <div className="flex gap-10 text-xl mr-10">
           <IoIosGitCompare />
+          <MdOutlineFavoriteBorder />
           <CgProfile />
-          <HiOutlineShoppingBag />
+          <div className="flex gap-1">
+            <div>
+              <div className="relative rounded-lg">
+                <HiOutlineShoppingBag />
+                <div class="absolute inline-flex bg-[#FED700] items-center justify-center w-6 h-6 text-xs font-bold border rounded-full -bottom-4 -right-2">
+                  20
+                </div>
+              </div>
+            </div>
+            <div className="items-start text-sm font-bold">
+              <p>$0.00</p>
+            </div>
+          </div>
         </div>
       </main>
     </section>
