@@ -71,7 +71,7 @@ const Navbar = () => {
             </form>
           </div>
         </div>
-        <div className="flex gap-10 text-xl mr-10">
+        <div className="flex gap-10 text-xl">
           <IoIosGitCompare />
           <MdOutlineFavoriteBorder />
           <CgProfile />
