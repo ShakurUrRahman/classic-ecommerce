@@ -52,11 +52,13 @@ const Navbar = () => {
               <GiHamburgerMenu />
             </p>
             <form>
-              <input
-                type="text"
-                placeholder="Search for Products"
-                className="absolute w-[520px] border-2 rounded-3xl border-[#FED700] placeholder-slate-400 focus:outline-none px-[33px] py-[7px]"
-              />
+              <div className="text-clip overflow-hidden ">
+                <input
+                  type="text"
+                  placeholder="Search for Products"
+                  className="absolute w-[520px] border-2 rounded-3xl border-[#FED700] placeholder-slate-400 focus:outline-none px-[30px] py-[7px]"
+                />
+              </div>
               <button className="relative left-[315px] bottom-1">
                 <div className="flex justify-center items-center gap-2">
                   <p>All Categories</p>
