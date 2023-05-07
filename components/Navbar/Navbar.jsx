@@ -44,7 +44,7 @@ const Navbar = () => {
           </ul>
         </div>
       </header>
-      <main className="w-full h-[125px] px-[50px] flex justify-between items-center">
+      <main className="w-full h-[125px] px-[54px] flex justify-between items-center">
         <div className="flex justify-center items-center gap-24">
           <Image src={logo} alt="" className="w-[155px] h-[45px]" />
           <div className="flex justify-center items-center gap-8">
@@ -73,7 +73,7 @@ const Navbar = () => {
             </form>
           </div>
         </div>
-        <div className="flex gap-10 text-xl">
+        <div className="flex gap-10 text-xl mr-2">
           <IoIosGitCompare />
           <MdOutlineFavoriteBorder />
           <CgProfile />
