@@ -5,7 +5,8 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { CgProfile } from "react-icons/cg";
 import { TfiReload } from "react-icons/tfi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { HiOutlineChevronUpDown } from "react-icons/hi2";
+import { FaChevronDown } from "react-icons/fa";
+import { MdHeadsetMic } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { IoIosGitCompare } from "react-icons/io";
@@ -44,50 +45,48 @@ const Navbar = () => {
           </ul>
         </div>
       </header>
-      <main className="w-full h-[125px] px-[54px] flex justify-between items-center">
-        <div className="flex justify-center items-center gap-24">
+      <main className="w-full h-[100px] px-[44px] flex justify-between items-center">
+        <div className="flex justify-center items-center gap-20">
           <Image src={logo} alt="" className="w-[155px] h-[45px]" />
-          <div className="flex justify-center items-center gap-8">
+          <div className="flex justify-center items-center gap-10">
             <p className="text-2xl">
               <GiHamburgerMenu />
             </p>
-            <form>
-              <div className="text-clip overflow-hidden ">
-                <input
-                  type="text"
-                  placeholder="Search for Products"
-                  className="absolute w-[520px] border-2 rounded-3xl border-[#FED700] placeholder-slate-400 focus:outline-none px-[30px] py-[7px]"
-                />
+            <nav className="flex gap-6 text-sm font-bold mb-1">
+              <div className="flex justify-center items-center gap-2 ">
+                <p>Home</p>
+                <p className="mt-[5px] text-[10px] text-gray-500">
+                  <FaChevronDown />
+                </p>
               </div>
-              <button className="relative left-[315px] bottom-1">
-                <div className="flex justify-center items-center gap-2">
-                  <p>All Categories</p>
-                  <p className="font-bold">
-                    <HiOutlineChevronUpDown />
-                  </p>
-                </div>
-              </button>
-              <button className="relative text-xl left-[333px] bg-[#FED700] px-[22px] py-[10px] border rounded-r-3xl">
-                <BsSearch />
-              </button>
-            </form>
+              <p>About Us</p>
+              <div className="flex justify-center items-center gap-2 ">
+                <p>Blog</p>
+                <p className="mt-[5px] text-[10px] text-gray-500">
+                  <FaChevronDown />
+                </p>
+              </div>
+              <div className="flex justify-center items-center gap-2 ">
+                <p>Products</p>
+                <p className="mt-[5px] text-[10px] text-gray-500">
+                  <FaChevronDown />
+                </p>
+              </div>
+              <p>Features</p>
+              <p>Contact Us</p>
+            </nav>
           </div>
         </div>
         <div className="flex gap-10 text-xl mr-2">
-          <IoIosGitCompare />
-          <MdOutlineFavoriteBorder />
-          <CgProfile />
-          <div className="flex gap-1">
-            <div>
-              <div className="relative rounded-lg">
-                <HiOutlineShoppingBag />
-                <div class="absolute inline-flex bg-[#FED700] items-center justify-center w-6 h-6 text-xs font-bold border rounded-full -bottom-4 -right-2">
-                  20
-                </div>
-              </div>
+          <div className="flex gap-3">
+            <div className="text-5xl text-yellow-300">
+              <MdHeadsetMic />
             </div>
-            <div className="items-start text-sm font-bold">
-              <p>$0.00</p>
+            <div className="text-sm text-gray-700 flex flex-col gap-1">
+              <p>
+                <span className="font-bold">Support</span> (+800) 856 800 604
+              </p>
+              <p>Email: info@electro.com</p>
             </div>
           </div>
         </div>
